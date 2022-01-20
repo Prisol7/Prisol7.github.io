@@ -90,7 +90,7 @@ button{
 @media only screen and (max-width: 820px) {
 
  body{
-   background-color: blue;
+   background-color: white;
  }
 
  
@@ -124,7 +124,7 @@ button{
 
 @media only screen and (max-width: 700px) {
   body{
-    background-color:red;
+    background-color:white;
   }
   button{
     height: 100px;
