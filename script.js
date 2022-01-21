@@ -1,4 +1,4 @@
-       //User no longer has to manually type in the answer instead they can simply push a button 
+        //User no longer has to manually type in the answer instead they can simply push a button 
         let userScore = 0;
         let computerScore = 0;
         let tie = 0
@@ -17,6 +17,7 @@
         const userElement = document.getElementById("userscore");
         const comElement = document.getElementById("comscore");
         const tieElement = document.getElementById("ties");
+        //add doc selector for computer pick
         
         
         //function that determines the selection of the computer randomly
@@ -79,7 +80,7 @@
             else if(computerScore > userScore){
                 return 'The computer won the game'
             }
-            else{
+            else if(computerScore == userScore){
                 return 'It is a tie'
             }
         }
