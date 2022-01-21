@@ -1,8 +1,8 @@
 body {
-    font-family: Sans-Serif;
-    height: 100%;
-    margin:0;
-    background-image: url('https://images.unsplash.com/photo-1550573079-b12f15bbfc8c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80');
+  font-family: Sans-Serif;
+  height: 100%;
+  margin:0;
+  background-image: url('https://images.unsplash.com/photo-1550573079-b12f15bbfc8c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -23,6 +23,7 @@ body {
 #container h1{
   text-align: center;
   font-size: 3em;
+  font-family: 'Space Mono', monospace;
 }
 table {
     border-collapse: collapse;
@@ -31,6 +32,8 @@ table {
     font-size: 1.2rem;
     width: 800px;
     height: 150px;
+    color: white;
+    text-shadow: -2px -2px 0 black
   }
   
   td, th {
@@ -98,7 +101,8 @@ button:hover img{
 @media only screen and (max-width: 820px) {
 
  body{
-   background-color: #282133;
+  background-image: none;
+   background: linear-gradient(#e3663a, #282133);
  }
 
  
