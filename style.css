@@ -177,18 +177,28 @@ button:hover img{
   .matchup{
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 80px;
     height: 150px;
     margin: 0 auto;
   }
   #user{
     height: 150px;
     
-    width: 200px;
+    width: 120px;
   }
   #computer{
     height: 150px;
     
-    width: 200px;
+    width: 120px;
+  }
+  #umatchup-image{
+    height: 100%;
+    width:  100%;
+  }
+  #cmatchup-image{
+    height: 100%;
+    width:  100%;
+   
   }
 }
