@@ -15,9 +15,9 @@ body {
   justify-content: center;
   
   color: white;
-  height: 300px;
+  height: 100px;
   align-items: center;
-  margin-bottom: 80px;
+  margin-bottom: 30px;
 }
 
 #container h1{
@@ -31,7 +31,7 @@ table {
     letter-spacing: 3px;
     font-size: 1.2rem;
     width: 800px;
-    height: 150px;
+    height: 120px;
     color: white;
     text-shadow: -2px -2px 0 black
   }
@@ -60,6 +60,31 @@ table {
   margin: 0 auto;
 }
 
+.matchup{
+  display: flex;
+  width: 75%;
+  justify-content: space-between;
+  height: 200px;
+  margin: 0 auto;
+}
+#user{
+  height: 200px;
+  
+  width: 300px;
+}
+#computer{
+  height: 200px;
+  
+  width: 300px;
+}
+#umatchup-image{
+  height: 100%;
+  
+}
+#cmatchup-image{
+  height: 100%;
+ 
+}
 button{
   border-radius: 8px;
   height: 200px;
@@ -71,7 +96,7 @@ button{
   display: flex;
   gap: 50px;
   width: 100%;
-  height: 400px;
+  height: 300px;
   justify-content: center;
   align-items: center;
   margin-bottom: 80px;
@@ -86,7 +111,7 @@ button:hover img{
 .score{
   display: flex;
   justify-content: center;
-  margin-bottom: 80px;
+  margin-bottom: 30px;
 }
 
 #results{
@@ -104,6 +129,13 @@ button:hover img{
   background-image: none;
    background: linear-gradient(#e3663a, #282133);
  }
+ .matchup{
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  height: 200px;
+  margin: 0 auto;
+}
 
  
 #container{
@@ -141,5 +173,22 @@ button:hover img{
   button{
     height: 100px;
     width: 100px;
+  }
+  .matchup{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 150px;
+    margin: 0 auto;
+  }
+  #user{
+    height: 150px;
+    
+    width: 200px;
+  }
+  #computer{
+    height: 150px;
+    
+    width: 200px;
   }
 }

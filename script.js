@@ -13,6 +13,8 @@
         //just selects the proper elements  
         const rockbtn = document.querySelector('#rock');
         const paperbtn = document.querySelector('#paper');
+        const matchUpUser = document.getElementById('#user')
+        const matchUpComputer = document.getElementById('#computer')
         const scissorsbtn = document.querySelector('#scissors');
         const userElement = document.getElementById("userscore");
         const comElement = document.getElementById("comscore");
@@ -29,18 +31,23 @@
         
         //takes user and computer input and returns a 0 for computer win; 1 for user win; 2 for tie
         let determineWinner = (answer, comanswer) => {
+
+
             if (answer == 'rock' ) {
                 if (comanswer == 'paper') {
                     console.log(`computer wins: ${comanswer} beats ${answer}`)
+                
                     return(
                         0
                     )
                 } else if(comanswer == 'scissors') {
                     console.log(`I win: : ${answer} beats ${comanswer}`)
+                  
                     return(1)
                 }
                 else{
                     console.log(`It is a tie: ${answer} equals ${comanswer}`)
+                   
                     return(2)
                 }
                 
@@ -84,10 +91,42 @@
                 return 'It is a tie'
             }
         }
+
+        let matchUp =(userScore, computerPick) => {
+            console.log(computerPick)
+            switch (userScore) {
+                case 'rock':
+                    document.getElementById('umatchup-image').src="./image/misc-pet-rock.svg"
+                    break;
+                case 'paper':
+                    document.getElementById('umatchup-image').src="./image/loose_leaf_paper.svg"
+                    break;
+                case 'scissors':
+                    document.getElementById('umatchup-image').src="./image/scissors_01.svg"
+                    break;
+                default:
+                    break;
+            }
+            switch (computerPick) {
+                case 'rock':
+                    document.getElementById('cmatchup-image').src="./image/misc-pet-rock.svg"
+                    break;
+                case 'paper':
+                    document.getElementById('cmatchup-image').src="./image/loose_leaf_paper.svg"
+                    break;
+                case 'scissors':
+                    document.getElementById('cmatchup-image').src="./image/scissors_01.svg"
+                    break;
+                default:
+                    break;
+            }
+        }
         //when a button is pushed, game runs and determines the winnerof the round and awards a point to user, computer, or tie
         let game = (userInput, computerplay, determineWinner) => {
                 computerPick = computerplay();
-                k = determineWinner( userInput, computerPick)
+                k = determineWinner( userInput, computerPick) 
+                matchUp(userInput, computerPick)  //work in prgress
+
                 if (k == 0 ) {
                     computerScore++;
                     gamescoreCom++;
