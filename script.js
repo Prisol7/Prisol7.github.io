@@ -96,26 +96,26 @@
             console.log(computerPick)
             switch (userScore) {
                 case 'rock':
-                    document.getElementById('umatchup-image').src="./image/misc-pet-rock.svg"
+                    document.getElementById('umatchup-image').src="./image/misc-pet-rock1.svg"
                     break;
                 case 'paper':
-                    document.getElementById('umatchup-image').src="./image/loose_leaf_paper.svg"
+                    document.getElementById('umatchup-image').src="./image/loose_leaf_paper1.svg"
                     break;
                 case 'scissors':
-                    document.getElementById('umatchup-image').src="./image/scissors_01.svg"
+                    document.getElementById('umatchup-image').src="./image/scissors_011.svg"
                     break;
                 default:
                     break;
             }
             switch (computerPick) {
                 case 'rock':
-                    document.getElementById('cmatchup-image').src="./image/misc-pet-rock.svg"
+                    document.getElementById('cmatchup-image').src="./image/misc-pet-rock1.svg"
                     break;
                 case 'paper':
-                    document.getElementById('cmatchup-image').src="./image/loose_leaf_paper.svg"
+                    document.getElementById('cmatchup-image').src="./image/loose_leaf_paper1.svg"
                     break;
                 case 'scissors':
-                    document.getElementById('cmatchup-image').src="./image/scissors_01.svg"
+                    document.getElementById('cmatchup-image').src="./image/scissors_011.svg"
                     break;
                 default:
                     break;
