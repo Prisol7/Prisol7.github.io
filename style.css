@@ -178,7 +178,7 @@ button:hover img{
     display: flex;
     width: 100%;
     justify-content: center;
-    gap: 80px;
+    gap: 40px;
     height: 150px;
     margin: 0 auto;
   }
